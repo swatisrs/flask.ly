@@ -9,7 +9,7 @@ app.register_blueprint(router)
 db = SQLAlchemy(app)
 
 
-@app.before_first_request
+@app.before_first_request //participating in hacktoberfest
 def db_init():
     db.create_all()
 
